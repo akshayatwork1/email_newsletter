@@ -7,6 +7,30 @@ import pandas as pd
 import datetime
 import os
 
+# Customize the layout and style
+st.set_page_config(page_title="Renivet Admin Panel", page_icon="📧", layout="wide")
+st.markdown("""
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            color: #333333;
+        }
+        .block-container {
+            padding: 2rem;
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #0073e6;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+# Add logo at the top of the page
+st.image("R-BlackIcon.png", width=200)
+
 # Streamlit app title
 st.title("📧 Renivet Email Newsletter")
 
