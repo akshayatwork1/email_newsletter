@@ -8,7 +8,7 @@ import datetime
 import os
 
 # Streamlit app title
-st.title("📧 Bulk Email Sender with Customization and Reporting")
+st.title("📧 Renivet Email Newsletter")
 
 # Sidebar with options
 option = st.sidebar.selectbox("Choose an Option", ["Enter Email Credentials", "View Report"])
@@ -16,7 +16,7 @@ option = st.sidebar.selectbox("Choose an Option", ["Enter Email Credentials", "V
 # Email credentials input and email sending functionality
 if option == "Enter Email Credentials":
     st.sidebar.header("Email Credentials")
-    email = st.sidebar.text_input("Your Email (GoDaddy)")
+    email = st.sidebar.text_input("Your Email")
     password = st.sidebar.text_input("Your Password", type="password")
 
     # Upload CSV file with recipient details
