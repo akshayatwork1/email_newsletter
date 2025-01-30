@@ -8,7 +8,9 @@ import datetime
 import os
 
 # Customize the layout and style
-st.set_page_config(page_title="Renivet Admin Panel", page_icon="📧", layout="wide")
+st.set_page_config(page_title="Renivet Admin Panel", page_icon="📧", layout="centered")
+
+# Minimal styling for a clean look
 st.markdown("""
     <style>
         body {
@@ -17,22 +19,21 @@ st.markdown("""
             color: #333333;
         }
         .block-container {
-            padding: 2rem;
-            background-color: #f9f9f9;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            background-color: #ffffff;
         }
         h1, h2, h3 {
             color: #0073e6;
+            text-align: center;
         }
     </style>
 """, unsafe_allow_html=True)
 
-# Add logo at the top of the page
-st.image("R-BlackIcon.png", width=200)
+# Add a smaller logo at the top of the page
+st.image("R-BlackIcon.png", width=120, use_column_width=False)
 
 # Streamlit app title
-st.title("📧 Renivet Email Newsletter")
+st.title("📧 Renivet Email Newsletter Admin Panel")
 
 # Sidebar with options
 option = st.sidebar.selectbox("Choose an Option", ["Enter Email Credentials", "View Report"])
